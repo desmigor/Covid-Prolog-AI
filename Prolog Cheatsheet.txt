@@ -1,0 +1,40 @@
+"PROLOG CHEATSHEET"
+------------------
+
+Defining facts
+---------------
+Ex: likes(john,mary).
+rules: . Should be in small letters
+       . End with a point
+
+Variables
+----------
+Ex: ?-likes(john,X)
+X is a variable and any name with a capital letter is 
+considered as a variable.
+
+Conjunctions
+-------------
+AND && = , in prolog 
+OR || = ; in prolog  
+
+Ex: ?-likes(john,mary), likes(mary,john).
+
+Facts
+------
+
+:- = if statement
+
+Ex: likes (john,x) :- person(x)
+
+Characters
+-----------
+
+-printing: A-Z, a-z, 0-9, special characters
+-Non-printing characters: blank space, new line, beep sound
+
+Constants
+----------
+-numbers; any number
+-atoms:  * type 1: letters (small case)+ digits
+         * type 2: signs
